@@ -7,9 +7,8 @@ using namespace std;
 int main(){
 	int n,ans=0;cin >> n;
 	while(n--){
-		int a,b,c,cnt=0;cin >> a >> b >> c;
-		cnt += (a == 1) + (b == 1) + (c == 1);
-		ans += (cnt >= 2);
+		int a,b,c;cin >> a >> b >> c;
+		ans += (a + b + c > 1);
 	}
 	cout << ans;
 }
